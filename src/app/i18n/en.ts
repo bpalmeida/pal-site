@@ -26,47 +26,45 @@ export const en: Translations = {
 
   instalacoes: {
     heroTitle: 'Our Facilities',
-    intro1:
-      'Picadeiro Arena Lusitana is proud to offer world-class facilities, designed to provide the best possible environment for both horses and riders.',
-    intro2:
-      'All of our infrastructure is maintained to the highest standards of quality and safety, ensuring an exceptional equestrian experience.',
+    intro:
+      'Picadeiro Arena Lusitana prides itself on offering facilities designed to provide the best environment for both horses and riders. All of our infrastructure is regularly maintained to ensure an exceptional equestrian experience.',
     facilities: [
       {
         title: 'Indoor Arena',
         description:
-          'A 40x60m indoor arena with sand footing, professional LED lighting, and an automatic watering system. Ideal for training in any weather.',
+          'Covered arena with silica/fiber flooring, lighting, and an automatic watering system. Ideal for training in any weather condition.',
       },
-      {
-        title: 'Outdoor Arena',
-        description:
-          'A 60x80m outdoor arena with specialised draining footing, perfect for jumping and dressage. Enclosed with safety fencing and spectator stands.',
-      },
+      // {
+      //   title: 'Outdoor Arena',
+      //   description:
+      //     'A 60x80m outdoor arena with specialised draining footing, perfect for jumping and dressage. Enclosed with safety fencing and spectator stands.',
+      // },
       {
         title: 'Stables',
         description:
-          '30 spacious 4x4m stalls with natural ventilation, individual lighting, and double doors. Automatic state-of-the-art water and feed systems.',
+          '25 stalls with natural ventilation and an automatic watering system. ',
       },
       {
         title: 'Grazing Fields',
         description:
-          '15 hectares of natural pasture divided into rotating paddocks. Every field has covered shelters, automatic water troughs, and secure fencing.',
+          'Herd pastures and individual paddocks. All fields have covered shelters, automatic watering systems, and secure fencing.',
       },
       {
         title: 'Wash Area',
         description:
-          'Two covered wash bays with hot and cold water, non-slip flooring, and efficient drainage systems. Equipped with high-pressure hoses.',
+          'Four covered wash areas with hot and cold water, non-slip flooring.',
       },
       {
         title: 'Tack Room & Storage',
         description:
-          'A climate-controlled tack room with individual lockers for equipment, plus spacious storage for hay, straw, and feed.',
+          'Tack room with individual lockers for equipment.',
       },
     ],
     amenitiesTitle: 'Additional Amenities',
     amenities: [
-      { icon: '🅿️', title: 'Parking', description: 'Ample free parking for visitors and clients' },
-      { icon: '☕', title: 'Lounge Area', description: 'A comfortable space with a café and rest area' },
-      { icon: '📶', title: 'Free Wi-Fi', description: 'High-speed internet throughout the facility' },
+      { icon: '🅿️', title: 'Parking', description: 'Free parking for visitors and clients' },
+      // { icon: '☕', title: 'Lounge Area', description: 'A comfortable space with a café and rest area' },
+      // { icon: '📶', title: 'Free Wi-Fi', description: 'High-speed internet throughout the facility' },
     ],
   },
 
@@ -134,7 +132,7 @@ export const en: Translations = {
     individual: {
       title: 'Private Lesson',
       description: 'Personalised attention with a dedicated instructor',
-      price: '€45',
+      price: '€40',
       period: '/lesson',
       features: ['1 hour long', 'Dedicated instructor', 'Horse matched to your level', 'Equipment included'],
     },
@@ -148,10 +146,10 @@ export const en: Translations = {
     package: {
       badge: 'Most Popular',
       title: 'Monthly Package',
-      description: '8 group lessons per month',
-      price: '€210',
+      description: '4 group lessons per month',
+      price: '€100',
       period: '/month',
-      features: ['8 lessons included', 'Save €30', 'Flexible scheduling', 'Personalised progress tracking'],
+      features: ['4 lessons included', 'Save €20', 'Flexible scheduling', 'Personalised progress tracking'],
     },
   },
 
@@ -165,58 +163,56 @@ export const en: Translations = {
     short: {
       title: 'Short Ride',
       description: '1-hour route',
-      price: '€35',
+      price: '€80',
       period: '/person',
       features: ['1 hour long', 'Easy trails', 'Accompanying guide', 'Suitable for all levels'],
     },
     medium: {
       title: 'Long Ride',
       description: '2-hour route',
-      price: '€60',
+      price: '€120',
       period: '/person',
-      features: ['2 hours long', 'Panoramic scenery', 'Specialised guide', 'Intermediate level'],
+      features: ['2 hours long', 'Panoramic scenery', 'Specialised guide', 'Suitable for all levels'],
     },
     sunset: {
-      title: 'Sunset Ride',
-      description: 'A unique experience',
-      price: '€70',
-      period: '/person',
-      features: ['1h30 long', 'Special timing', 'Spectacular views', 'Small groups'],
+      title: 'Group Rides',
+      description: 'Minimum 4 people',
+      price: 'On request',
+      period: '',
+      features: ['Variable duration', 'Spectacular views', 'Small groups'],
     },
   },
 
   eventos: {
-    heroTitle: 'Equestrian Events',
+    heroTitle: 'Events',
     intro1:
-      'Picadeiro Arena Lusitana organises and hosts a variety of equestrian events throughout the year. From show jumping competitions to dressage exhibitions, workshops, and clinics with renowned instructors.',
-    intro2:
-      'Our first-class facilities and prime location make our arena the ideal setting for corporate events, private celebrations, and official competitions.',
+      'Picadeiro Arena Lusitana organises and hosts a variety of events throughout the year. Our facilities and prime location make our arena the ideal setting for birthday parties and private celebrations.',
     pricingTitle: 'Event Pricing',
-    competitions: {
-      title: 'Competitions',
-      description: 'Organisation of official events',
-      price: 'On request',
-      features: ['Full use of the facilities', 'Support team', 'Professional timing', 'Catering available', 'Ample parking'],
-    },
-    workshops: {
-      title: 'Workshops & Clinics',
-      description: 'Take part in training events',
-      price: '€80',
-      period: '/day',
-      features: ['Full day of training', 'Specialised instructors', 'Teaching materials included', 'Certificate of participation'],
-    },
+    // competitions: {
+    //   title: 'Competitions',
+    //   description: 'Organisation of official events',
+    //   price: 'On request',
+    //   features: ['Full use of the facilities', 'Support team', 'Professional timing', 'Catering available', 'Ample parking'],
+    // },
+    // workshops: {
+    //   title: 'Workshops & Clinics',
+    //   description: 'Take part in training events',
+    //   price: '€80',
+    //   period: '/day',
+    //   features: ['Full day of training', 'Specialised instructors', 'Teaching materials included', 'Certificate of participation'],
+    // },
     privateEvents: {
       title: 'Private Events',
       description: 'Celebrations and corporate events',
-      price: 'From €500',
+      price: 'On request',
       features: ['Venue rental', 'Equestrian demonstrations', 'Rides for guests', 'Customisable space', 'Catering on request'],
     },
     birthdayParty: {
       title: 'Birthday Parties',
       description: 'A unique celebration with horses',
-      price: '€250',
-      period: '/up to 10 children',
-      features: ['2 hours of activities', 'Horse rides', 'Themed activities', 'Decorations included'],
+      price: 'On request  ',
+      period: '',
+      features: ['A jam-packed day', 'Horse rides', 'Themed activities', 'Decorations included'],
     },
   },
 

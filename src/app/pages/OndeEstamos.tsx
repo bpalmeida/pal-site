@@ -5,7 +5,7 @@ export default function OndeEstamos() {
   const { t } = useLanguage();
 
   return (
-    <div className="pt-40 pb-16">
+    <div className="pt-28 pb-16">
       <div className="container mx-auto px-6">
         <h1 className="text-5xl font-serif text-center mb-12">{t.ondeEstamos.heroTitle}</h1>
 

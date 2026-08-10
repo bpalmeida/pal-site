@@ -1,7 +1,7 @@
 import { Outlet, Link, ScrollRestoration } from "react-router";
 import { useState } from "react";
 // import logo from 'figma:asset/63155132769809b074382e306b9be09e5862d917.png';
-import logo from '../../assets/PAL_logo.png';
+import logo from '../../assets/PAL_logo_1.png';
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
 
@@ -43,7 +43,7 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col">
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-sm">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-6 py-0">
           <div className="flex items-center justify-between">
             <Link to="/" onClick={closeMobileMenu}>
               <img

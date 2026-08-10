@@ -57,7 +57,7 @@ export default function Galeria() {
     : images.filter(img => img.category === selectedCategory);
 
   return (
-    <div className="pt-24 pb-16 min-h-screen bg-gradient-to-b from-amber-50 to-white">
+    <div className="pt-20 pb-16 min-h-screen bg-gradient-to-b from-amber-50 to-white">
       {/* Hero Section */}
       <div className="relative h-96 mb-12">
         <ImageWithFallback

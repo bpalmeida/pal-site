@@ -24,7 +24,7 @@ export default function Instalacoes() {
   }));
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="pt-20 pb-16">
       {/* Hero Section */}
       <div className="relative h-96 mb-12">
         <ImageWithFallback

@@ -6,7 +6,7 @@ export default function Aulas() {
   const { t } = useLanguage();
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="pt-20 pb-16">
       {/* Hero Section */}
       <div className="relative h-96 mb-12">
         <ImageWithFallback
