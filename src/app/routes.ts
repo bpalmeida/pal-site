@@ -4,7 +4,8 @@ import Home from "./pages/Home";
 import Aulas from "./pages/escola/Aulas";
 import Passeios from "./pages/escola/Passeios";
 import Eventos from "./pages/escola/Eventos";
-import ATLs from "./pages/escola/ATLs";
+// ATLs hidden for now
+// import ATLs from "./pages/escola/ATLs";
 import CavalosAPenso from "./pages/CavalosAPenso";
 import Instalacoes from "./pages/Instalacoes";
 import OndeEstamos from "./pages/OndeEstamos";
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
       { path: "escola/aulas", Component: Aulas },
       { path: "escola/passeios", Component: Passeios },
       { path: "escola/eventos", Component: Eventos },
-      { path: "escola/atls", Component: ATLs },
+      // { path: "escola/atls", Component: ATLs },
       { path: "cavalos-penso", Component: CavalosAPenso },
       { path: "instalacoes", Component: Instalacoes },
       { path: "galeria", Component: Galeria },
