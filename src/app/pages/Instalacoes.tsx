@@ -1,4 +1,4 @@
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../components/ImageWithFallback';
 import { useLanguage } from '../i18n/LanguageContext';
 import picadeiroCoberto from '../../assets/photos/picadeiro-coberto.jpg';
 import picadeiroExterior from '../../assets/photos/picadeiro-exterior.jpg';

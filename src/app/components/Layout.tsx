@@ -1,6 +1,5 @@
 import { Outlet, Link, ScrollRestoration } from "react-router";
 import { useState } from "react";
-// import logo from 'figma:asset/63155132769809b074382e306b9be09e5862d917.png';
 import logo from '../../assets/PAL_logo_1.png';
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";

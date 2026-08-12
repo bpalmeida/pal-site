@@ -1,11 +1,10 @@
 
-  # Site para Picadeiro Luxo
+  # Picadeiro Arena Lusitana
 
-  This is a code bundle for Site para Picadeiro Luxo. The original project is available at https://www.figma.com/design/ryLR81og713tbj0wsBz0dH/Site-para-Picadeiro-Luxo.
+  Website for Picadeiro Arena Lusitana.
 
   ## Running the code
 
   Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
-  

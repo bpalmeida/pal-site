@@ -1,4 +1,4 @@
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../components/ImageWithFallback';
 import { Link } from 'react-router';
 import { useLanguage } from '../i18n/LanguageContext';
 import areaLavagem from '../../assets/photos/area-lavagem.jpg';

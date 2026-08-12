@@ -1,4 +1,4 @@
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { ImageWithFallback } from '../components/ImageWithFallback';
 import { useLanguage } from '../i18n/LanguageContext';
 import estabulos from '../../assets/photos/estabulos.jpg';
 
