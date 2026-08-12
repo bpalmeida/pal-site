@@ -83,12 +83,14 @@ export default function Layout() {
                         >
                           {t.nav.eventos}
                         </Link>
+                        {/* ATLs hidden for now
                         <Link
                           to="/escola/atls"
                           className="block px-6 py-3 hover:bg-amber-600 transition-colors"
                         >
                           {t.nav.atls}
                         </Link>
+                        */}
                       </div>
                     </div>
                   )}
@@ -159,11 +161,13 @@ export default function Layout() {
                         {t.nav.eventos}
                       </Link>
                     </li>
+                    {/* ATLs hidden for now
                     <li>
                       <Link to="/escola/atls" onClick={closeMobileMenu} className="block py-2 text-white/80 hover:text-amber-300 transition-colors">
                         {t.nav.atls}
                       </Link>
                     </li>
+                    */}
                   </ul>
                 )}
               </li>
