@@ -1,7 +1,7 @@
 import { ImageWithFallback } from '../components/ImageWithFallback';
 import { useLanguage } from '../i18n/LanguageContext';
 import picadeiroCoberto from '../../assets/photos/picadeiro-coberto.jpg';
-import picadeiroExterior from '../../assets/photos/picadeiro-exterior.jpg';
+// import picadeiroExterior from '../../assets/photos/picadeiro-exterior.jpg';
 import estabulos from '../../assets/photos/estabulos.jpg';
 import camposPastagem from '../../assets/photos/campos-pastagem.jpg';
 import areaLavagem from '../../assets/photos/area-lavagem.jpg';
@@ -9,7 +9,7 @@ import aulasHorse from '../../assets/photos/aulas-horse.jpg';
 
 const facilityImages = [
   picadeiroCoberto,
-  picadeiroExterior,
+  // picadeiroExterior,
   estabulos,
   camposPastagem,
   areaLavagem,
