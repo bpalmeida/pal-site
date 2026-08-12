@@ -13,6 +13,7 @@ export default function Aulas() {
           src={aulasHorse}
           alt="Aulas de Equitação"
           className="w-full h-full object-cover"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <h1 className="text-white text-5xl font-serif">{t.aulas.heroTitle}</h1>

@@ -64,6 +64,7 @@ export default function Galeria() {
           src={lusitanoPortrait}
           alt="Galeria"
           className="w-full h-full object-cover"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40 flex items-center justify-center">
           <div className="text-center">

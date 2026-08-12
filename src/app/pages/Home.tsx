@@ -12,6 +12,7 @@ export default function Home() {
         src={areaLavagem}
         alt="Picadeiro Arena Lusitana"
         className="w-full h-full object-cover"
+        loading="eager"
       />
       
       {/* Overlay */}
