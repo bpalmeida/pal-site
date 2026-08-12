@@ -3,14 +3,14 @@ export const pt = {
 
   nav: {
     schoolMenu: 'Escola de equitação',
-    aulas: 'Aulas',
-    passeios: 'Passeios',
-    eventos: 'Eventos',
-    atls: "ATL's",
-    cavalosPenso: 'Cavalos a penso',
-    instalacoes: 'Instalações',
-    galeria: 'Galeria',
-    ondeEstamos: 'Onde Estamos',
+    lessons: 'Aulas',
+    rides: 'Passeios',
+    events: 'Eventos',
+    kidsCamp: "ATL's",
+    boarding: 'Cavalos a penso',
+    facilities: 'Instalações',
+    gallery: 'Galeria',
+    location: 'Onde Estamos',
   },
 
   footer: {
@@ -22,11 +22,11 @@ export const pt = {
     subtitle: 'Descubra a excelência na equitação. Junte-se a nós.',
   },
 
-  instalacoes: {
+  facilities: {
     heroTitle: 'Instalações',
     intro:
       'O Picadeiro Arena Lusitana orgulha-se de oferecer instalações projetadas para proporcionar o melhor ambiente tanto para cavalos como para cavaleiros. Todas as nossas infraestruturas são regularmente mantidas garantindo uma experiência equestre excecional.',
-    facilities: [
+    items: [
       {
         title: 'Picadeiro Coberto',
         description:
@@ -66,7 +66,7 @@ export const pt = {
     ],
   },
 
-  cavalosPenso: {
+  boarding: {
     heroTitle: 'Cavalos a Penso',
     intro1:
       'No Picadeiro Arena Lusitana, oferecemos serviços de pensos para cavalos, garantindo o máximo conforto, cuidado e bem-estar do seu animal. As nossas instalações modernas e equipa dedicada asseguram que o seu cavalo recebe a melhor atenção diária.',
@@ -120,7 +120,7 @@ export const pt = {
     ],
   },
 
-  aulas: {
+  lessons: {
     heroTitle: 'Aulas de Equitação',
     intro1:
       'Oferecemos aulas de equitação para todos os níveis, desde iniciantes até cavaleiros avançados. As nossas aulas são ministradas por instrutores certificados e experientes, garantindo uma aprendizagem segura e eficaz.',
@@ -151,7 +151,7 @@ export const pt = {
     },
   },
 
-  passeios: {
+  rides: {
     heroTitle: 'Passeios a Cavalo',
     intro1:
       'Explore a beleza natural da região portuguesa a cavalo. Os nossos passeios são ideais para quem deseja desfrutar de uma experiência única em contacto com a natureza, percorrendo trilhos seguros e paisagens deslumbrantes.',
@@ -181,7 +181,7 @@ export const pt = {
     },
   },
 
-  eventos: {
+  events: {
     heroTitle: 'Eventos',
     intro1:
       'O Picadeiro Arena Lusitana organiza e acolhe diversos eventos equestres ao longo do ano. As nossas instalações e a localização privilegiada fazem do nosso picadeiro o local ideal para festas de aniversário e celebrações privadas.',
@@ -214,7 +214,7 @@ export const pt = {
     },
   },
 
-  atls: {
+  kidsCamp: {
     heroTitle: 'ATL de Equitação',
     intro1:
       'O nosso ATL (Atividades de Tempos Livres) de equitação proporciona às crianças uma experiência única e educativa durante as férias escolares. Combinamos o aprendizado da equitação com atividades lúdicas e pedagógicas num ambiente seguro e supervisionado.',
@@ -253,15 +253,15 @@ export const pt = {
     ],
   },
 
-  galeria: {
+  gallery: {
     heroTitle: 'Galeria',
     heroSubtitle: 'Momentos memoráveis do Picadeiro Arena Lusitana',
     categories: {
-      todos: 'Todos',
-      cavalos: 'Cavalos',
-      aulas: 'Aulas',
-      instalacoes: 'Instalações',
-      passeios: 'Passeios',
+      all: 'Todos',
+      horses: 'Cavalos',
+      lessons: 'Aulas',
+      facilities: 'Instalações',
+      rides: 'Passeios',
     },
     imageTitles: [
       'Cavalo Lusitano em retrato',
@@ -280,7 +280,7 @@ export const pt = {
     emptyState: 'Nenhuma imagem encontrada nesta categoria.',
   },
 
-  ondeEstamos: {
+  location: {
     heroTitle: 'Onde Estamos',
     contactsTitle: 'Contactos',
     addressLabel: 'Morada',

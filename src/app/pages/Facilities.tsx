@@ -16,9 +16,9 @@ const facilityImages = [
   aulasHorse,
 ];
 
-export default function Instalacoes() {
+export default function Facilities() {
   const { t } = useLanguage();
-  const facilities = t.instalacoes.facilities.map((facility, index) => ({
+  const facilities = t.facilities.items.map((facility, index) => ({
     ...facility,
     image: facilityImages[index],
   }));
@@ -34,7 +34,7 @@ export default function Instalacoes() {
           loading="eager"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-          <h1 className="text-white text-5xl font-serif">{t.instalacoes.heroTitle}</h1>
+          <h1 className="text-white text-5xl font-serif">{t.facilities.heroTitle}</h1>
         </div>
       </div>
 
@@ -42,10 +42,10 @@ export default function Instalacoes() {
         {/* Description */}
         <div className="max-w-3xl mx-auto mb-12 text-center">
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            {t.instalacoes.intro}
+            {t.facilities.intro}
           </p>
           {/* <p className="text-lg text-gray-700 leading-relaxed">
-            {t.instalacoes.intro2}
+            {t.facilities.intro2}
           </p> */}
         </div>
 
@@ -79,9 +79,9 @@ export default function Instalacoes() {
 
         {/* Additional Features */}
         <div className="max-w-5xl mx-auto mt-16">
-          <h2 className="text-3xl font-serif mb-8 text-center">{t.instalacoes.amenitiesTitle}</h2>
+          <h2 className="text-3xl font-serif mb-8 text-center">{t.facilities.amenitiesTitle}</h2>
           <div className="flex flex-wrap justify-center gap-6">
-            {t.instalacoes.amenities.map((amenity) => (
+            {t.facilities.amenities.map((amenity) => (
               <div key={amenity.title} className="bg-amber-50 p-6 rounded-lg text-center w-full sm:w-72">
                 <div className="text-4xl mb-3">{amenity.icon}</div>
                 <h4 className="font-bold text-lg mb-2">{amenity.title}</h4>

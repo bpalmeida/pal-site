@@ -16,21 +16,21 @@ import closeUp from '../../assets/photos/close-up.jpg';
 import liberdade from '../../assets/photos/liberdade.jpg';
 import passeioArLivre from '../../assets/photos/passeio-ar-livre.jpg';
 
-type CategoryKey = 'todos' | 'cavalos' | 'aulas' | 'instalacoes' | 'passeios';
+type CategoryKey = 'all' | 'horses' | 'lessons' | 'facilities' | 'rides';
 
 const IMAGE_DATA: { id: number; url: string; category: CategoryKey }[] = [
-  { id: 1, url: lusitanoPortrait, category: 'cavalos' },
-  { id: 2, url: dressageTraining, category: 'aulas' },
-  { id: 3, url: saltosObstaculos, category: 'aulas' },
-  { id: 4, url: aulasHorse, category: 'aulas' },
-  { id: 5, url: cavaloBranco, category: 'cavalos' },
-  { id: 6, url: estabulosLuxo, category: 'instalacoes' },
-  { id: 7, url: arenaTreino, category: 'instalacoes' },
-  { id: 8, url: porDoSol, category: 'passeios' },
-  { id: 9, url: equipamento, category: 'instalacoes' },
-  { id: 10, url: closeUp, category: 'cavalos' },
-  { id: 11, url: liberdade, category: 'cavalos' },
-  { id: 12, url: passeioArLivre, category: 'passeios' },
+  { id: 1, url: lusitanoPortrait, category: 'horses' },
+  { id: 2, url: dressageTraining, category: 'lessons' },
+  { id: 3, url: saltosObstaculos, category: 'lessons' },
+  { id: 4, url: aulasHorse, category: 'lessons' },
+  { id: 5, url: cavaloBranco, category: 'horses' },
+  { id: 6, url: estabulosLuxo, category: 'facilities' },
+  { id: 7, url: arenaTreino, category: 'facilities' },
+  { id: 8, url: porDoSol, category: 'rides' },
+  { id: 9, url: equipamento, category: 'facilities' },
+  { id: 10, url: closeUp, category: 'horses' },
+  { id: 11, url: liberdade, category: 'horses' },
+  { id: 12, url: passeioArLivre, category: 'rides' },
 ];
 
 interface GalleryImage {
@@ -40,19 +40,19 @@ interface GalleryImage {
   title: string;
 }
 
-export default function Galeria() {
+export default function Gallery() {
   const { t } = useLanguage();
-  const [selectedCategory, setSelectedCategory] = useState<CategoryKey>('todos');
+  const [selectedCategory, setSelectedCategory] = useState<CategoryKey>('all');
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
 
   const images: GalleryImage[] = IMAGE_DATA.map((img, index) => ({
     ...img,
-    title: t.galeria.imageTitles[index],
+    title: t.gallery.imageTitles[index],
   }));
 
-  const categories: CategoryKey[] = ['todos', 'cavalos', 'aulas', 'instalacoes', 'passeios'];
+  const categories: CategoryKey[] = ['all', 'horses', 'lessons', 'facilities', 'rides'];
 
-  const filteredImages = selectedCategory === 'todos'
+  const filteredImages = selectedCategory === 'all'
     ? images
     : images.filter(img => img.category === selectedCategory);
 
@@ -68,8 +68,8 @@ export default function Galeria() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-white text-6xl font-serif mb-4">{t.galeria.heroTitle}</h1>
-            <p className="text-white text-xl">{t.galeria.heroSubtitle}</p>
+            <h1 className="text-white text-6xl font-serif mb-4">{t.gallery.heroTitle}</h1>
+            <p className="text-white text-xl">{t.gallery.heroSubtitle}</p>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@ export default function Galeria() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {t.galeria.categories[category]}
+              {t.gallery.categories[category]}
             </motion.button>
           ))}
         </div>
@@ -120,7 +120,7 @@ export default function Galeria() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <h3 className="text-white text-xl font-serif">{image.title}</h3>
-                    <p className="text-amber-300 text-sm mt-1">{t.galeria.categories[image.category]}</p>
+                    <p className="text-amber-300 text-sm mt-1">{t.gallery.categories[image.category]}</p>
                   </div>
                 </div>
               </motion.div>
@@ -131,7 +131,7 @@ export default function Galeria() {
         {/* Empty State */}
         {filteredImages.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-gray-500 text-xl">{t.galeria.emptyState}</p>
+            <p className="text-gray-500 text-xl">{t.gallery.emptyState}</p>
           </div>
         )}
       </div>
@@ -168,7 +168,7 @@ export default function Galeria() {
               />
               <div className="bg-gradient-to-t from-black/80 to-transparent absolute bottom-0 left-0 right-0 p-8 rounded-b-lg">
                 <h2 className="text-white text-3xl font-serif mb-2">{selectedImage.title}</h2>
-                <p className="text-amber-300 text-lg">{t.galeria.categories[selectedImage.category]}</p>
+                <p className="text-amber-300 text-lg">{t.gallery.categories[selectedImage.category]}</p>
               </div>
             </motion.div>
           </motion.div>

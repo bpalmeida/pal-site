@@ -27,11 +27,11 @@ export default function Home() {
           <p className="text-white text-xl mb-8 font-light tracking-wide">
             {t.home.subtitle}
           </p>
-          { <Link 
-            to="/onde-estamos"
+          { <Link
+            to="/location"
             className="inline-block bg-amber-600 hover:bg-amber-700 text-white px-12 py-4 text-lg font-medium tracking-wide transition-colors duration-300 uppercase"
           >
-            {t.ondeEstamos.heroTitle}
+            {t.location.heroTitle}
           </Link>}
         </div>
       </div>

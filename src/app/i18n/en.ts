@@ -5,14 +5,14 @@ export const en: Translations = {
 
   nav: {
     schoolMenu: 'Riding School',
-    aulas: 'Lessons',
-    passeios: 'Trail Rides',
-    eventos: 'Events',
-    atls: 'Kids Camp',
-    cavalosPenso: 'Horse Boarding',
-    instalacoes: 'Facilities',
-    galeria: 'Gallery',
-    ondeEstamos: 'Find Us',
+    lessons: 'Lessons',
+    rides: 'Trail Rides',
+    events: 'Events',
+    kidsCamp: 'Kids Camp',
+    boarding: 'Horse Boarding',
+    facilities: 'Facilities',
+    gallery: 'Gallery',
+    location: 'Find Us',
   },
 
   footer: {
@@ -24,11 +24,11 @@ export const en: Translations = {
     subtitle: 'Discover excellence in horsemanship. Join us.',
   },
 
-  instalacoes: {
+  facilities: {
     heroTitle: 'Our Facilities',
     intro:
       'Picadeiro Arena Lusitana prides itself on offering facilities designed to provide the best environment for both horses and riders. All of our infrastructure is regularly maintained to ensure an exceptional equestrian experience.',
-    facilities: [
+    items: [
       {
         title: 'Indoor Arena',
         description:
@@ -68,7 +68,7 @@ export const en: Translations = {
     ],
   },
 
-  cavalosPenso: {
+  boarding: {
     heroTitle: 'Horse Boarding',
     intro1:
       'At Picadeiro Arena Lusitana, we offer horse boarding services, ensuring maximum comfort, care, and wellbeing for your animal. Our modern facilities and dedicated team make sure your horse gets the best attention every day.',
@@ -122,7 +122,7 @@ export const en: Translations = {
     ],
   },
 
-  aulas: {
+  lessons: {
     heroTitle: 'Riding Lessons',
     intro1:
       'We offer riding lessons for all levels, from beginners to advanced riders. Our lessons are taught by certified, experienced instructors, ensuring safe and effective learning.',
@@ -153,7 +153,7 @@ export const en: Translations = {
     },
   },
 
-  passeios: {
+  rides: {
     heroTitle: 'Trail Rides',
     intro1:
       'Explore the natural beauty of the Portuguese countryside on horseback. Our trail rides are ideal for anyone wanting a unique experience in nature, along safe trails and breathtaking scenery.',
@@ -183,7 +183,7 @@ export const en: Translations = {
     },
   },
 
-  eventos: {
+  events: {
     heroTitle: 'Events',
     intro1:
       'Picadeiro Arena Lusitana organises and hosts a variety of events throughout the year. Our facilities and prime location make our arena the ideal setting for birthday parties and private celebrations.',
@@ -216,7 +216,7 @@ export const en: Translations = {
     },
   },
 
-  atls: {
+  kidsCamp: {
     heroTitle: 'Kids Riding Camp',
     intro1:
       'Our equestrian holiday camp gives children a unique, educational experience during school breaks. We combine learning to ride with fun, hands-on activities in a safe, supervised environment.',
@@ -255,15 +255,15 @@ export const en: Translations = {
     ],
   },
 
-  galeria: {
+  gallery: {
     heroTitle: 'Gallery',
     heroSubtitle: 'Memorable moments at Picadeiro Arena Lusitana',
     categories: {
-      todos: 'All',
-      cavalos: 'Horses',
-      aulas: 'Lessons',
-      instalacoes: 'Facilities',
-      passeios: 'Trail Rides',
+      all: 'All',
+      horses: 'Horses',
+      lessons: 'Lessons',
+      facilities: 'Facilities',
+      rides: 'Trail Rides',
     },
     imageTitles: [
       'Lusitano Horse Portrait',
@@ -282,7 +282,7 @@ export const en: Translations = {
     emptyState: 'No images found in this category.',
   },
 
-  ondeEstamos: {
+  location: {
     heroTitle: 'Find Us',
     contactsTitle: 'Contact',
     addressLabel: 'Address',

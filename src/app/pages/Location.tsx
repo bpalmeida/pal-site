@@ -1,25 +1,25 @@
 import { Mail, Facebook, Instagram, Phone, MapPin } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 
-export default function OndeEstamos() {
+export default function Location() {
   const { t } = useLanguage();
 
   return (
     <div className="pt-28 pb-16">
       <div className="container mx-auto px-6">
-        <h1 className="text-5xl font-serif text-center mb-12">{t.ondeEstamos.heroTitle}</h1>
+        <h1 className="text-5xl font-serif text-center mb-12">{t.location.heroTitle}</h1>
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           {/* Contact Info Card */}
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-3xl font-serif mb-6 text-amber-700">{t.ondeEstamos.contactsTitle}</h2>
+            <h2 className="text-3xl font-serif mb-6 text-amber-700">{t.location.contactsTitle}</h2>
 
             <div className="space-y-6">
               {/* Address */}
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-bold text-lg mb-1">{t.ondeEstamos.addressLabel}</h3>
+                  <h3 className="font-bold text-lg mb-1">{t.location.addressLabel}</h3>
                   <p className="text-gray-700">
                     Caminho do Roseiral 149<br />
                     2640-577 - Mafra<br />
@@ -32,7 +32,7 @@ export default function OndeEstamos() {
               <div className="flex items-start gap-4">
                 <Phone className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-bold text-lg mb-1">{t.ondeEstamos.phoneLabel}</h3>
+                  <h3 className="font-bold text-lg mb-1">{t.location.phoneLabel}</h3>
                   <p className="text-gray-700">+351 926 230 596</p>
                   <p className="text-gray-700">+351 912 024 203</p>
                 </div>
@@ -42,7 +42,7 @@ export default function OndeEstamos() {
               <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-bold text-lg mb-1">{t.ondeEstamos.emailLabel}</h3>
+                  <h3 className="font-bold text-lg mb-1">{t.location.emailLabel}</h3>
                   <a href="mailto:picadeiroarenalusitana@gmail.com" className="text-amber-600 hover:text-amber-700">
                     picadeiroarenalusitana@gmail.com
                   </a>
@@ -51,7 +51,7 @@ export default function OndeEstamos() {
 
               {/* Social Media */}
               <div>
-                <h3 className="font-bold text-lg mb-3">{t.ondeEstamos.socialLabel}</h3>
+                <h3 className="font-bold text-lg mb-3">{t.location.socialLabel}</h3>
                 <div className="flex gap-4">
                   {/* <a
                     href="https://facebook.com/arenalusitana"
@@ -76,14 +76,14 @@ export default function OndeEstamos() {
 
               {/* Opening Hours */}
               <div className="border-t pt-6 mt-6">
-                <h3 className="font-bold text-lg mb-3">{t.ondeEstamos.hoursLabel}</h3>
+                <h3 className="font-bold text-lg mb-3">{t.location.hoursLabel}</h3>
                 <div className="space-y-2 text-gray-700">
                   <div className="flex justify-between">
-                    <span>{t.ondeEstamos.hoursWeekday}</span>
+                    <span>{t.location.hoursWeekday}</span>
                     <span className="font-medium">09:00 - 20:00</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>{t.ondeEstamos.hoursSunday}</span>
+                    <span>{t.location.hoursSunday}</span>
                     <span className="font-medium">09:00 - 13:00</span>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function OndeEstamos() {
 
           {/* Map Card */}
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-3xl font-serif mb-6 text-amber-700">{t.ondeEstamos.locationTitle}</h2>
+            <h2 className="text-3xl font-serif mb-6 text-amber-700">{t.location.locationTitle}</h2>
 
             {/* Google Maps Embed */}
             <div className="w-full h-[450px] bg-gray-200 rounded-lg overflow-hidden">
@@ -112,7 +112,7 @@ export default function OndeEstamos() {
 
             <div className="mt-6 bg-amber-50 p-4 rounded-lg">
               <p className="text-sm text-gray-700">
-                <strong>{t.ondeEstamos.howToArriveLabel}</strong> {t.ondeEstamos.howToArriveText}
+                <strong>{t.location.howToArriveLabel}</strong> {t.location.howToArriveText}
               </p>
             </div>
           </div>

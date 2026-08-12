@@ -28,14 +28,14 @@ function LanguageSwitch() {
 }
 
 export default function Layout() {
-  const [showEscolaMenu, setShowEscolaMenu] = useState(false);
+  const [showSchoolMenu, setShowSchoolMenu] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mobileEscolaOpen, setMobileEscolaOpen] = useState(false);
+  const [mobileSchoolOpen, setMobileSchoolOpen] = useState(false);
   const { t } = useLanguage();
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
-    setMobileEscolaOpen(false);
+    setMobileSchoolOpen(false);
   };
 
   return (
@@ -56,39 +56,39 @@ export default function Layout() {
             <div className="hidden lg:flex items-center gap-8">
               <ul className="flex gap-8 text-white">
                 <li className="relative"
-                    onMouseEnter={() => setShowEscolaMenu(true)}
-                    onMouseLeave={() => setShowEscolaMenu(false)}>
+                    onMouseEnter={() => setShowSchoolMenu(true)}
+                    onMouseLeave={() => setShowSchoolMenu(false)}>
                   <button className="hover:text-amber-300 transition-colors flex items-center gap-1">
                     {t.nav.schoolMenu}
                     <ChevronDown className="w-4 h-4" />
                   </button>
-                  {showEscolaMenu && (
+                  {showSchoolMenu && (
                     <div className="absolute top-full left-0 pt-2 min-w-[200px]">
                       <div className="bg-black/90 backdrop-blur-sm rounded-lg overflow-hidden">
                         <Link
-                          to="/escola/aulas"
+                          to="/school/lessons"
                           className="block px-6 py-3 hover:bg-amber-600 transition-colors"
                         >
-                          {t.nav.aulas}
+                          {t.nav.lessons}
                         </Link>
                         <Link
-                          to="/escola/passeios"
+                          to="/school/rides"
                           className="block px-6 py-3 hover:bg-amber-600 transition-colors"
                         >
-                          {t.nav.passeios}
+                          {t.nav.rides}
                         </Link>
                         <Link
-                          to="/escola/eventos"
+                          to="/school/events"
                           className="block px-6 py-3 hover:bg-amber-600 transition-colors"
                         >
-                          {t.nav.eventos}
+                          {t.nav.events}
                         </Link>
-                        {/* ATLs hidden for now
+                        {/* Kids Camp hidden for now
                         <Link
-                          to="/escola/atls"
+                          to="/school/kids-camp"
                           className="block px-6 py-3 hover:bg-amber-600 transition-colors"
                         >
-                          {t.nav.atls}
+                          {t.nav.kidsCamp}
                         </Link>
                         */}
                       </div>
@@ -96,23 +96,23 @@ export default function Layout() {
                   )}
                 </li>
                 <li>
-                  <Link to="/cavalos-penso" className="hover:text-amber-300 transition-colors">
-                    {t.nav.cavalosPenso}
+                  <Link to="/boarding" className="hover:text-amber-300 transition-colors">
+                    {t.nav.boarding}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/instalacoes" className="hover:text-amber-300 transition-colors">
-                    {t.nav.instalacoes}
+                  <Link to="/facilities" className="hover:text-amber-300 transition-colors">
+                    {t.nav.facilities}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/galeria" className="hover:text-amber-300 transition-colors">
-                    {t.nav.galeria}
+                  <Link to="/gallery" className="hover:text-amber-300 transition-colors">
+                    {t.nav.gallery}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/onde-estamos" className="hover:text-amber-300 transition-colors">
-                    {t.nav.ondeEstamos}
+                  <Link to="/location" className="hover:text-amber-300 transition-colors">
+                    {t.nav.location}
                   </Link>
                 </li>
               </ul>
@@ -138,33 +138,33 @@ export default function Layout() {
               <li className="border-b border-white/10">
                 <button
                   className="w-full flex items-center justify-between py-4"
-                  onClick={() => setMobileEscolaOpen((open) => !open)}
-                  aria-expanded={mobileEscolaOpen}
+                  onClick={() => setMobileSchoolOpen((open) => !open)}
+                  aria-expanded={mobileSchoolOpen}
                 >
                   {t.nav.schoolMenu}
-                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileEscolaOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileSchoolOpen ? 'rotate-180' : ''}`} />
                 </button>
-                {mobileEscolaOpen && (
+                {mobileSchoolOpen && (
                   <ul className="pb-3 pl-4 space-y-1">
                     <li>
-                      <Link to="/escola/aulas" onClick={closeMobileMenu} className="block py-2 text-white/80 hover:text-amber-300 transition-colors">
-                        {t.nav.aulas}
+                      <Link to="/school/lessons" onClick={closeMobileMenu} className="block py-2 text-white/80 hover:text-amber-300 transition-colors">
+                        {t.nav.lessons}
                       </Link>
                     </li>
                     <li>
-                      <Link to="/escola/passeios" onClick={closeMobileMenu} className="block py-2 text-white/80 hover:text-amber-300 transition-colors">
-                        {t.nav.passeios}
+                      <Link to="/school/rides" onClick={closeMobileMenu} className="block py-2 text-white/80 hover:text-amber-300 transition-colors">
+                        {t.nav.rides}
                       </Link>
                     </li>
                     <li>
-                      <Link to="/escola/eventos" onClick={closeMobileMenu} className="block py-2 text-white/80 hover:text-amber-300 transition-colors">
-                        {t.nav.eventos}
+                      <Link to="/school/events" onClick={closeMobileMenu} className="block py-2 text-white/80 hover:text-amber-300 transition-colors">
+                        {t.nav.events}
                       </Link>
                     </li>
-                    {/* ATLs hidden for now
+                    {/* Kids Camp hidden for now
                     <li>
-                      <Link to="/escola/atls" onClick={closeMobileMenu} className="block py-2 text-white/80 hover:text-amber-300 transition-colors">
-                        {t.nav.atls}
+                      <Link to="/school/kids-camp" onClick={closeMobileMenu} className="block py-2 text-white/80 hover:text-amber-300 transition-colors">
+                        {t.nav.kidsCamp}
                       </Link>
                     </li>
                     */}
@@ -172,23 +172,23 @@ export default function Layout() {
                 )}
               </li>
               <li className="border-b border-white/10">
-                <Link to="/cavalos-penso" onClick={closeMobileMenu} className="block py-4 hover:text-amber-300 transition-colors">
-                  {t.nav.cavalosPenso}
+                <Link to="/boarding" onClick={closeMobileMenu} className="block py-4 hover:text-amber-300 transition-colors">
+                  {t.nav.boarding}
                 </Link>
               </li>
               <li className="border-b border-white/10">
-                <Link to="/instalacoes" onClick={closeMobileMenu} className="block py-4 hover:text-amber-300 transition-colors">
-                  {t.nav.instalacoes}
+                <Link to="/facilities" onClick={closeMobileMenu} className="block py-4 hover:text-amber-300 transition-colors">
+                  {t.nav.facilities}
                 </Link>
               </li>
               <li className="border-b border-white/10">
-                <Link to="/galeria" onClick={closeMobileMenu} className="block py-4 hover:text-amber-300 transition-colors">
-                  {t.nav.galeria}
+                <Link to="/gallery" onClick={closeMobileMenu} className="block py-4 hover:text-amber-300 transition-colors">
+                  {t.nav.gallery}
                 </Link>
               </li>
               <li>
-                <Link to="/onde-estamos" onClick={closeMobileMenu} className="block py-4 hover:text-amber-300 transition-colors">
-                  {t.nav.ondeEstamos}
+                <Link to="/location" onClick={closeMobileMenu} className="block py-4 hover:text-amber-300 transition-colors">
+                  {t.nav.location}
                 </Link>
               </li>
             </ul>
